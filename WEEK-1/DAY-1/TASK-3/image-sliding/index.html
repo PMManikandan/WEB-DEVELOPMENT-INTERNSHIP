@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="imageslide">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+        
+              <div class="swiper-slide"><img src="images/1.jpg"> <center> <b><font size="+2" color="white"></font></b></center></div>
+              <div class="swiper-slide"><img src="images/venusmars.jpg"> <center> <b><font size="+2" color="white">2.Venus Mars Conjuction</font></b></center></div>
+              <div class="swiper-slide"><img src="images/saturn.jpg"> <center> <b><font size="+2" color="white">3.Saturn jupiter conjuction</font></b></center></div>
+              <div class="swiper-slide"><img src="images/jupiter.JPG"> <center> <b><font size="+2" color="white">4.Jupiter Saturn Mercury conjuction</font></b></center></div>
+              <div class="swiper-slide"><img src="images/eclipse.JPG"> <center> <b><font size="+2" color="white">5.Eclipse</font></b></center></div>
+              <div class="swiper-slide"><img src="images/sun.JPG"> <center> <b><font size="+2" color="white">6.Sun</font></b></center></div>
+              <div class="swiper-slide"><img src="images/earth.jpg"> <center> <b><font size="+2" color="white">7.Earth</font></b></center></div>
+              <div class="swiper-slide"><img src="images/thanku.PNG"> </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay:3000,
+                disableOnInteracton:false,
+            },
+  
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>  
+</body>
+</html>
