@@ -1,0 +1,32 @@
+body{
+    margin: 100px;
+}
+.locaton{}
+.locaton .input-box{
+    display: flex;
+    align-items: center;
+
+}
+.locaton .input-box label{
+    min-width: 120px;
+
+}
+.locaton .input-box input{
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 300px;
+
+}
+.locaton .input-box textarea{
+    width: 300px;
+    padding: 5px;
+}
+legend{
+    font-size: 25px;
+    font-weight:600;
+    margin-bottom: 30px;
+
+}
+fieldset{
+    padding: 20px 60px;
+}
